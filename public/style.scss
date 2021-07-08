@@ -1,0 +1,62 @@
+$colour1: #3b2f2f;
+$colour2: #f8f8f8;
+$colour3: #128482;
+$colour4: #d0491e;
+
+$padding: 6px 6%;
+$page-margin: 42px;
+
+* {
+  box-sizing: border-box;
+  color: $colour1;
+  font-family: "rockwell";
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+nav,
+footer {
+  background-color: $colour3;
+  padding: $padding;
+  * {
+    color: $colour2;
+  }
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  text-align: right;
+  width: 100vw;
+}
+
+.page {
+  margin-top: $page-margin;
+  padding: $padding;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 210px 420px;
+  .home-text {
+    min-height: 210px;
+    padding: $padding;
+    position: relative;
+    .button {
+      background-color: $colour3;
+      bottom: 0;
+      color: $colour2;
+      margin-top: 70px;
+      padding: 6px 12px;
+      position: absolute;
+      right: 0;
+      text-align: center;
+    }
+  }
+}
